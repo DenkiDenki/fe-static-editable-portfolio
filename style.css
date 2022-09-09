@@ -1,0 +1,75 @@
+/*general*/
+/*header*/
+img {
+  background-color: aliceblue;
+  width: 300px;
+  height: 300px;
+}
+/*body*/
+.container,
+.container-fluid {
+}
+/*nav*/
+nav {
+  height: 5%;
+}
+/*login buttons */
+ul.right-nav {
+  padding-left: 0px;
+}
+ul.right-nav li a {
+  width: 150px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+  color: #3a76cb;
+  border: solid 1px #3a76cb;
+  vertical-align: middle;
+  display: table-cell;
+}
+ul.right-nav li:last-child {
+  margin-right: 0px;
+}
+ul.right-nav li.active a {
+  background-color: #3a76cb;
+  color: #fff;
+}
+ul {
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+ul.right-nav {
+  padding-left: 0px;
+}
+
+ul.right-nav li a {
+  width: 150px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+  color: #3a76cb;
+  border: solid 1px #3a76cb;
+  vertical-align: middle;
+  display: table-cell;
+}
+ul.right-nav li:last-child {
+  margin-right: 0px;
+}
+ul.right-nav li.active a {
+  background-color: #3a76cb;
+  color: #fff;
+}
+/*form*/
+/*footer*/
+/*experience*/
+/*education*/
+/*skills*/
+/*projects*/
+/*login*/
+/*edition buttons*/
