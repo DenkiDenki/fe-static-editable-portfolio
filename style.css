@@ -68,6 +68,9 @@ ul.right-nav li.active a {
 /*form*/
 /*footer*/
 /*experience*/
+.edit-btn {
+  float: right;
+}
 /*education*/
 /*skills*/
 /*projects*/
