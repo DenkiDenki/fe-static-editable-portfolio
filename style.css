@@ -15,12 +15,18 @@ p {
   font-family: var(--font-family-content);
 }
 .section-scroller {
+  width: auto;
 }
 .container-content {
   display: grid;
   grid-auto-flow: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
   grid-auto-columns: 100%;
-  overscroll-behavior-inline: contain;
+  /*overscroll-behavior-inline: contain;
+  background-color: #3a76cb;*/
+  height: 65vh;
+  width: 100vw;
 }
 /*header*/
 
