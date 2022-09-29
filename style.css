@@ -4,6 +4,7 @@
 :root {
   --font-family-principal: "PT Sans", sans-serif;
   --font-family-content: "PT Serif", serif;
+  --spacer: 2rem;
 }
 /*general*/
 h1,
@@ -14,19 +15,31 @@ h3 {
 p {
   font-family: var(--font-family-content);
 }
-.section-scroller {
-  width: auto;
-}
-.container-content {
+.container-scroller {
   display: grid;
+  gap: var(--spacer);
   grid-auto-flow: column;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  grid-auto-columns: 100%;
-  /*overscroll-behavior-inline: contain;
-  background-color: #3a76cb;*/
-  height: 65vh;
+  grid-auto-columns: 90%;
+
+  padding: var(--spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  /*background-color: #3a76cb;*/
+  height: auto;
   width: 100vw;
+}
+.section-scroller {
+  display: grid;
+  grid-template-rows: min-content;
+  width: auto;
+  background-color: aliceblue;
+}
+.snaps-inline {
+  scroll-snap-type: both mandatory;
+  scroll-padding-inline-start: var(--spacer);
+}
+.snaps-inline > * {
+  scroll-snap-align: start;
 }
 /*header*/
 
