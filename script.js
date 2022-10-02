@@ -40,3 +40,18 @@ textarea.addEventListener("keyup", (e) => {
 });
 
 $editButton.addEventListener("click", editContent);
+
+/* input type file */
+function showFile(input) {
+  let file = input.files[0];
+  alert(`File Name
+${file.name}`); // eg. my.png let reader = new FileReader();
+  reader.readAsText(file);
+  reader.onload = function () {
+    console.log(reader);
+    document.getElementById("about-text").innerText = reader.result;
+  };
+  reader.onerror = function () {
+    console.log(reader.error);
+  };
+}
