@@ -7,6 +7,10 @@
   --spacer: 2rem;
 }
 /*general*/
+body {
+  max-height: 100vh;
+  overflow: hidden;
+}
 h1,
 h2,
 h3 {
@@ -15,6 +19,11 @@ h3 {
 p {
   font-family: var(--font-family-content);
 }
+/*edit component*/
+#edit-title {
+  display: none;
+}
+/*scroller-component*/
 .container-scroller {
   display: grid;
   gap: var(--spacer);
@@ -25,7 +34,7 @@ p {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   /*background-color: #3a76cb;*/
-  height: auto;
+  height: 100%;
   width: 100vw;
 }
 .section-scroller {
@@ -111,6 +120,9 @@ ul.right-nav li.active a {
 }
 /*form*/
 /*footer*/
+footer {
+  min-height: 5vh;
+}
 /*experience*/
 .edit-btn {
   float: right;

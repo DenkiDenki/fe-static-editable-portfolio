@@ -62,7 +62,19 @@
       <section class="section-scroller">
         <div class="container-fluid">
           <img src="#" class="img-fluid" alt="Responsive image" />
-          <h1 class="text-center text-md-left">Front Web Developer</h1>
+          <h1 class="text-center text-md-left" id="hero-title">
+            Denisa gerez - Front Web Developer
+          </h1>
+          <button class="edit-btn" id="edit-btn">
+            <i class="fas fa-edit"></i>
+          </button>
+          <div>
+            <input
+              type="text"
+              id="edit-title"
+              oninput="setHeroTitle(this.value)"
+            />
+          </div>
         </div>
       </section>
       <section class="section-scroller">
@@ -87,6 +99,7 @@
           <div class="row">
             <div class="col-sm-2"><h4>Empresa</h4></div>
             <div class="col-sm-10 py-2">
+              <!-- edit button-->
               <button class="edit-btn"><i class="fas fa-edit"></i></button>
               <h3>Title Role Developer</h3>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
@@ -126,6 +139,31 @@
               provident minima ut officia porro voluptatibus reiciendis,
               accusantium autem temporibus eligendi perspiciatis sunt atque!
               <button class="edit-btn"><i class="fas fa-edit"></i></button>
+              <p id="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga
+                fugit odit impedit omnis harum nam, aspernatur alias ex maiores
+                voluptatum id earum voluptatem! Assumenda cum iusto mollitia
+                amet placeat! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Explicabo libero blanditiis voluptatibus magni, quam
+                quaerat tenetur laboriosam voluptate consequuntur voluptatum a
+                at obcaecati est commodi cumque. Quos maiores officiis
+                recusandae? Temporibus maxime blanditiis perferendis laudantium
+                animi voluptatem corporis cumque in omnis accusamus nam velit
+                tenetur natus eius, porro dolorum officia nemo, doloribus
+                molestias tempora nihil minus. Possimus rerum quae perferendis.
+                Laudantium cumque ex hic. Officia at quas architecto magni!
+                Eveniet enim nobis aspernatur assumenda saepe! Ea sunt, a quo
+                atque ullam commodi laborum aliquid exercitationem adipisci
+                facilis error recusandae maiores! Nisi quibusdam, tempore
+                voluptate nobis cum repellat quaerat obcaecati, voluptas quod,
+                iste sequi! Ipsa cum eligendi dolore mollitia, molestias at
+                debitis totam! Aliquid itaque sint provident beatae suscipit
+                dolorum. Distinctio! Soluta cumque deleniti praesentium iusto at
+                facilis esse doloribus, omnis commodi earum perferendis
+                recusandae, consequuntur obcaecati eius officiis odit vero hic
+                consectetur placeat sed ipsa mollitia distinctio? Perspiciatis,
+                nam dignissimos!
+              </p>
             </div>
           </div>
         </div>
@@ -162,20 +200,14 @@
         </div>
       </section>
     </div>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum cupiditate
-      illum recusandae eaque aperiam expedita possimus dolorem quo atque fugit!
-      Molestias laudantium asperiores libero quis facere explicabo, tempora
-      earum minus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Officiis nam a pariatur totam, fugiat inventore vero cumque, non quisquam
-      obcaecati veniam vitae! Nam asperiores ea veniam, soluta odit eos tempore.
-      assumenda, quis minima, nobis doloribus maiores culpa ab amet beatae
-      totam! Necessitatibus expedita similique voluptatem iure minima? Omnis?
-      Ullam distinctio, quasi, harum temporibus veniam cupiditate veritatis quae
-      modi voluptatum reprehenderit sed repudiandae accusamus hic fuga quia
-      dolores. Odit, facere commodi. Reprehenderit debitis sunt quisquam quidem
-      ipsum maiores distinctio!
-    </p>
+    <footer>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+        cupiditate illum recusandae eaque aperiam expedita possimus dolorem quo
+        atque fugit! Molestias laudantium asperiores libero quis facere
+        explicabo, tempora earum minus!
+      </p>
+    </footer>
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -189,6 +221,6 @@
     ></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/p5@[p5_version]/lib/p5.js"></script>-->
     <script src="script.js"></script>
-    <script src="edition-scripts.js"></script>
+    <!--<script src="edition-scripts.js"></script>-->
   </body>
 </html>
