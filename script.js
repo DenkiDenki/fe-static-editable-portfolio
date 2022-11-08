@@ -11,7 +11,7 @@ $element.addEventListener("wheel", (event) => {
 /*********** */
 const $editButton = d.querySelector("#edit-btn");
 
-//visualizar el boton editButton y el input de texto
+//visualizar el botón editButton y el input de texto
 //tomar el input de texto, hacerlo visible y permitir editarlo
 // guardar ese texto en el title
 //volver a ocultar el botón
@@ -29,7 +29,7 @@ function logMessage(message) {
   console.log(message + "<br>");
 }
 
-//controla si se preciona enter
+//controla si se presiona enter
 let textarea = d.getElementById("edit-title");
 textarea.addEventListener("keyup", (e) => {
   logMessage(`Key "${e.key}" released [event: keyup]`);

@@ -10,6 +10,13 @@
 body {
   max-height: 100vh;
   overflow: hidden;
+  background: linear-gradient(
+    110deg,
+    rgba(148, 91, 185, 0.623) 6%,
+    rgba(99, 7, 109, 0.5) 36%,
+    rgba(2, 110, 199, 0.7) 100%
+  );
+  color: #fafafa;
 }
 h1,
 h2,
@@ -23,6 +30,9 @@ p {
 #edit-title {
   display: none;
 }
+.edit-btn {
+  float: right;
+}
 /*scroller-component*/
 .container-scroller {
   display: grid;
@@ -32,16 +42,20 @@ p {
 
   padding: var(--spacer);
   overflow-x: auto;
+  overflow-y: hidden;
   overscroll-behavior-inline: contain;
   /*background-color: #3a76cb;*/
-  height: 100%;
   width: 100vw;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .section-scroller {
   display: grid;
   grid-template-rows: min-content;
   width: auto;
-  background-color: aliceblue;
+  /*background-color: aliceblue;*/
+  max-height: 500px;
 }
 .snaps-inline {
   scroll-snap-type: both mandatory;
@@ -69,6 +83,11 @@ nav {
 /*login buttons */
 ul.right-nav {
   padding-left: 0px;
+  padding-left: 0px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  gap: 1rem;
 }
 ul.right-nav li a {
   width: 150px;
@@ -124,8 +143,15 @@ footer {
   min-height: 5vh;
 }
 /*experience*/
-.edit-btn {
-  float: right;
+#edit-role-title {
+  display: none;
+}
+/*about*/
+#about-section {
+  overflow-y: scroll;
+  height: 500px;
+}
+#about-text {
 }
 /*education*/
 /*skills*/
@@ -134,10 +160,10 @@ footer {
 /*edition buttons*/
 .glassdiv {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);*/
 }
