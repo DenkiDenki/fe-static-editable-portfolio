@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "name": "front-static",
+  "version": "1.0.0",
+  "description": "proyecto Portfolio Front-end estatico para la certificación Argentina Programa",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenkiDenki/fe-static-editable-portfolio.git"
+  },
+  "keywords": [
+    "javascript",
+    "portfolio",
+    "css",
+    "html"
+  ],
+  "author": "Denisa Gerez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenkiDenki/fe-static-editable-portfolio/issues"
+  },
+  "homepage": "https://github.com/DenkiDenki/fe-static-editable-portfolio#readme"
+}
