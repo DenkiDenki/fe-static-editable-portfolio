@@ -1,3 +1,11 @@
+$primary: #9400d9;
+$danger: #ff4136;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+);
+
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 /*FONTS*/
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -12,13 +20,13 @@
 body {
   height: 100vh;
   /* overflow: hidden; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     125.4deg,
     rgba(148, 91, 185, 0.32) 5.68%,
     rgba(113, 78, 192, 0.62) 38.63%,
     #026ec7 74.45%
   );
-  color: #fafafa;
+  color: #fafafa;*/
 }
 h1,
 h2,
@@ -67,12 +75,26 @@ p {
 }*/
 /*end .section-scroller*/
 /*header*/
-
-img {
-  background-color: aliceblue;
-  width: 300px;
-  height: 300px;
+.navbar {
+  background-color: #fbd1ff;
 }
+.navbar .logo img {
+  max-height: 70px;
+}
+#hero-img {
+  background-color: aliceblue;
+}
+
+#hero-section img {
+  border-radius: 100px;
+  width: 200px;
+  height: auto;
+}
+
+.hideEditBtn {
+  display: none;
+}
+
 /*body*/
 .container,
 .container-fluid {
@@ -91,21 +113,20 @@ ul.right-nav {
   grid-auto-columns: auto;
   gap: 1rem;
 }
-ul.right-nav li a {
-  width: 150px;
+ul.right-nav li {
+  width: 120px;
   height: 45px;
-  border-radius: 4px;
+  border-radius: 15px;
   background-color: #fff;
   text-align: center;
   color: #3a76cb;
-  border: solid 1px #3a76cb;
   vertical-align: middle;
   display: table-cell;
 }
 ul.right-nav li:last-child {
   margin-right: 0px;
 }
-ul.right-nav li.active a {
+ul.right-nav li.active {
   background-color: #3a76cb;
   color: #fff;
 }

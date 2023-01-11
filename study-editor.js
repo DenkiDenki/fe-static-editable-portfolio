@@ -1,3 +1,4 @@
+const d = document;
 const $editTitleBtn = d.querySelector("#edit-role-title-btn");
 
 function editContenta() {

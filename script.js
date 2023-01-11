@@ -44,11 +44,13 @@ $editButton.addEventListener("click", editContent);
 /* input type file */
 function showFile(input) {
   let file = input.files[0];
-  alert(`File Name
-${file.name}`); // eg. my.png let reader = new FileReader();
+  /*alert(`File Name: ${file.name}`); // eg. my.png
+  alert(`Last Modified: ${file.lastModified}`); // eg.1661401174595*/
+
+  let reader = new FileReader();
   reader.readAsText(file);
   reader.onload = function () {
-    console.log(reader);
+    console.log(reader.result);
     document.getElementById("about-text").innerText = reader.result;
   };
   reader.onerror = function () {
