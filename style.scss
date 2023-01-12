@@ -43,43 +43,14 @@ p {
 .edit-btn {
   float: right;
 }
-/*scroller-component*/
-/*
-.container-scroller {
-  display: grid;
-  gap: var(--spacer);
-  grid-auto-flow: column;
-  grid-auto-columns: 90%;
 
-  padding: var(--spacer);
-  overflow-x: auto;
-  overflow-y: hidden;
-  overscroll-behavior-inline: contain; 
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-.section-scroller {
-  display: grid;
-  grid-template-rows: min-content;
-  width: auto;
-  max-height: 500px;
-}
-.snaps-inline {
-  scroll-snap-type: both mandatory;
-  scroll-padding-inline-start: var(--spacer);
-}
-.snaps-inline > * {
-  scroll-snap-align: start;
-}*/
-/*end .section-scroller*/
 /*header*/
 .navbar {
   background-color: #fbd1ff;
 }
 .navbar .logo img {
-  max-height: 70px;
+  height: auto;
+  width: 120px;
 }
 #hero-img {
   background-color: aliceblue;
@@ -96,50 +67,21 @@ p {
 }
 
 /*body*/
-.container,
-.container-fluid {
-}
 /*nav*/
 nav {
-  height: 5%;
   font-family: var(--font-family-principal);
 }
 /*login buttons */
-ul.right-nav {
-  padding-left: 0px;
-  padding-left: 0px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: auto;
-  gap: 1rem;
-}
-ul.right-nav li {
-  width: 120px;
-  height: 45px;
-  border-radius: 15px;
-  background-color: #fff;
-  text-align: center;
-  color: #3a76cb;
-  vertical-align: middle;
-  display: table-cell;
-}
-ul.right-nav li:last-child {
-  margin-right: 0px;
-}
-ul.right-nav li.active {
-  background-color: #3a76cb;
-  color: #fff;
-}
+
 ul {
-  float: left;
-  margin-right: 20px;
   list-style: none;
-  padding-left: 0px;
-  margin-bottom: 0px;
-  padding-top: 10px;
 }
-ul.right-nav {
-  padding-left: 0px;
+
+ul.right-nav li {
+  border-radius: 15px;
+  padding: 0 10px;
+
+  display: table-cell;
 }
 
 ul.right-nav li a {
@@ -149,12 +91,8 @@ ul.right-nav li a {
   background-color: #fff;
   text-align: center;
   color: #3a76cb;
-  border: solid 1px #3a76cb;
   vertical-align: middle;
   display: table-cell;
-}
-ul.right-nav li:last-child {
-  margin-right: 0px;
 }
 ul.right-nav li.active a {
   background-color: #3a76cb;
@@ -171,8 +109,6 @@ footer {
 }
 /*about*/
 #about-section {
-  overflow-y: scroll;
-  height: 500px;
 }
 #about-text {
 }
